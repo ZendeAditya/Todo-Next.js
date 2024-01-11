@@ -2,7 +2,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-const RemoveBtn = ({ id }) => {
+const RemoveBtn = ({ id }: any) => {
   const router = useRouter();
 
   const removeStudent = async () => {
