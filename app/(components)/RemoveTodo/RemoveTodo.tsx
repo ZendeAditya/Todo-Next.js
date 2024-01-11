@@ -18,7 +18,7 @@ const RemoveBtn = ({ id }: any) => {
           router.refresh();
         }
       } catch (error) {
-        console.error("Error deleting student:", error.message);
+        console.error("Error deleting student:", error);
       }
     }
   };
