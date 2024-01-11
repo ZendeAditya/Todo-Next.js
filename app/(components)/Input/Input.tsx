@@ -4,6 +4,8 @@ import React, { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 type Props = {};
 import { CiSun } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 let url = "/api/todo";
 const Input = (props: Props) => {
   const [todo, setTodo] = useState("");
@@ -38,6 +40,11 @@ const Input = (props: Props) => {
       <div className="flex items-center justify-end p-6">
         <button>
           <CiSun size={25} />
+        </button>
+        <button>
+          <Link href="https://github.com/ZendeAditya/Todo-Next.js">
+            <FaGithub size={25} />
+          </Link>
         </button>
       </div>
       <div className="flex items-center justify-center gap-2 ">
