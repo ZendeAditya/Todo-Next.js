@@ -13,7 +13,7 @@ const EditForm = ({ id, title }: Props) => {
   const handleUpdate = async (e: FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:3000/api/todo/${id}`, {
+      const res = await fetch(`/api/todo/${id}`, {
         cache: "no-store",
         method: "PUT",
         body: JSON.stringify({ title: originalTitle }),

@@ -7,7 +7,7 @@ type Props = {
 
 const getTodoById = async (id: any) => {
   try {
-    const res = await fetch(`http://127.0.0.1:3000/api/todo/${id}`, {
+    const res = await fetch(`/api/todo/${id}`, {
       cache: "no-store",
     });
     const data = await res.json();
