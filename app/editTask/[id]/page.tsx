@@ -4,10 +4,10 @@ import React from "react";
 type Props = {
   params: any;
 };
-
+let url = "http://127.0.0.1:3000/api/todo";
 const getTodoById = async (id: any) => {
   try {
-    const res = await fetch(`/api/todo/${id}`, {
+    const res = await fetch(`${url}/${id}`, {
       cache: "no-store",
     });
     const data = await res.json();

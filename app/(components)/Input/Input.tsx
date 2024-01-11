@@ -41,8 +41,11 @@ const Input = (props: Props) => {
         <button>
           <CiSun size={25} />
         </button>
-        <button>
-          <Link href="https://github.com/ZendeAditya/Todo-Next.js">
+        <button className=" px-2">
+          <Link
+            target="_blank"
+            href="https://github.com/ZendeAditya/Todo-Next.js"
+          >
             <FaGithub size={25} />
           </Link>
         </button>
