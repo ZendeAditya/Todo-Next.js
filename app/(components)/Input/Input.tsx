@@ -4,7 +4,7 @@ import React, { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 type Props = {};
 import { CiSun } from "react-icons/ci";
-let url = "http://localhost:3000/api/todo";
+let url = "/api/todo";
 const Input = (props: Props) => {
   const [todo, setTodo] = useState("");
   const router = useRouter();

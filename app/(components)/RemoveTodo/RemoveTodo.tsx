@@ -10,13 +10,10 @@ const RemoveBtn = ({ id }: any) => {
 
     if (confirmed) {
       try {
-        const res = await fetch(`http://localhost:3000/api/todo?id=${id}`, {
+        const res = await fetch(`/api/todo?id=${id}`, {
           method: "DELETE",
         });
-        if (res.ok) {
-          // Assuming router.reload() is used to refresh the page
-          router.refresh();
-        }
+        router.refresh();
       } catch (error) {
         console.error("Error deleting student:", error);
       }
