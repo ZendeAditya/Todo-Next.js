@@ -7,6 +7,7 @@ import { CiSun } from "react-icons/ci";
 let url = "/api/todo";
 const Input = (props: Props) => {
   const [todo, setTodo] = useState("");
+  console.log(todo);
   const router = useRouter();
   const handleTodo = async (e: FormEvent) => {
     if (todo.length < 5) {
